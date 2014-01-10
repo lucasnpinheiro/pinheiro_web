@@ -1,0 +1,81 @@
+html, body {
+    height:100%;
+}
+body{
+    background-image: url('../img/pinheiro/fundo_topo.png');
+    background-repeat: repeat-x;
+    background-color: #ccc;
+}
+.navbar{
+    background: transparent;
+    border: none;
+}
+.topo{
+    height: 126px;
+}
+.banner{
+    height: 500px;
+}
+.conteudo{
+    min-height: 500px;
+}
+.rodape{
+    background-color: #242424;
+    display: block;
+    position: relative;
+    overflow: auto;
+}
+.rodape .rodape_nivel_1{
+    padding: 15px;
+    margin: 15px;
+    height: 75px;
+}
+.rodape .rodape_nivel_1 div{
+    background-color: #242424;
+}
+.rodape .rodape_nivel_2{
+    font-size: 0.7em;
+    background-color: #2E2E2E;
+    height: 75px;
+    color: #fff;
+}
+.rodape .rodape_nivel_2 a{
+    color: #fff;
+}
+.rodape .rodape_nivel_2 div{
+    padding: 15px;
+    background-color: #2E2E2E;
+}
+.social{
+    background-image: url('../img/pinheiro/sedes_sociais.png');
+    height: 43px;
+    width: 43px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+.social:hover{
+    background-image: url('../img/pinheiro/sedes_sociaishover.png');
+    height: 43px;
+    width: 43px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+.social_facebbok{
+    background-position: 0px 0px;
+}
+.social_twitter{
+    background-position: -45px 0px;
+}
+.social_google_plus{
+    background-position: -90px 0px;
+}
+.social_linkedin{
+    background-position: -135px 0px;
+}
+.social_flick{
+    background-position: -180px 0px;
+}
