@@ -1,17 +1,39 @@
+@font-face {
+    font-family: 'fonte';
+    src: url('../fonts/MyriadPro-BoldCond.eot');
+    src: url('../fonts/MyriadPro-BoldCond.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro-BoldCond.woff') format('woff'), url('../fonts/MyriadPro-BoldCond.ttf') format('truetype'), url('../fonts/MyriadPro-BoldCond.svg#vag') format('svg');
+    font-style: normal;
+}
+
+.fonte {
+    font-family: fonte;
+}
+@font-face {
+    font-family: 'fontecond';
+    src: url('../fonts/MyriadPro-Regular.eot');
+    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg#vag') format('svg');
+    font-style: normal;
+}
+
+.fontecond {
+    font-family: fontecond;
+}
 html, body {
     height:100%;
 }
 body{
-    background-color: #ccc;
+    background-color: #ddd;
 }
 .navbar{
     background: transparent;
     border: none;
 }
 .topo{
-    height: 126px;
+    border-top: 3px rgb(255, 133, 0) solid;
+    height: 624px;
     background-image: url('../img/fundo_topo.png');
     background-repeat: repeat-x;
+    background-color: #ddd;
 }
 .logo{
     height: 30px;
@@ -22,9 +44,6 @@ body{
     position: absolute;
     left: 150px;
 }
-.banner{
-    height: 500px;
-}
 .conteudo{
     min-height: 500px;
 }
@@ -33,6 +52,7 @@ body{
     display: block;
     position: relative;
     overflow: auto;
+    margin-top: 15px;
 }
 .rodape .rodape_nivel_1{
     padding: 15px;
@@ -45,7 +65,6 @@ body{
 .rodape .rodape_nivel_2{
     font-size: 0.7em;
     background-color: #2E2E2E;
-    height: 75px;
     color: #fff;
 }
 .rodape .rodape_nivel_2 a{
@@ -112,4 +131,116 @@ body{
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #CA501F;
     background-color: transparent;
+}
+
+#carousel{
+    height: 500px;
+    margin-top: 35px;
+}
+.carousel-inner>.item {
+    text-align: center;
+    margin: 0 auto;
+}
+.carousel-inner>.item>img, .carousel-inner>.item>a>img{
+    text-align: center;
+    margin: 0 auto;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 460px;
+    left: 0;
+    z-index: 15;
+    width: 98%;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: right;
+    list-style: none;
+    margin-right: 15px;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    background-repeat: repeat-x;
+    filter: none;
+}
+.max-largura{
+    max-width: 980px; margin: 0 auto;
+}
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+    background-color: #343E44;
+}
+.rodape_social {
+    text-align: center;
+}
+@media (min-width: 768px){ 
+    .navbar-collapse .navbar-nav.navbar-right:last-child {
+        margin-right: -15px;
+        background-color: transparent !important;
+    }
+    .rodape_social {
+        text-align: right;
+    }
+}
+.planos {
+    width: 260px;
+    font-size: 12px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+}
+.planos h2 a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #555;
+}
+.link_planos {
+    color: #CA501F;
+    display: block;
+    text-decoration: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.texto-titulo{
+    color: #797979;
+    font-size: 2.5em;
+    margin-top: -5px;
+}
+.texto-sub-titulo{
+    color: #797979;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+.texto-conteudo{
+    color: #898989;
+    font-size: 1em;
+}
+.texto-borda{
+    background-color: #ededed;
+    border-radius: 5px;
+    overflow: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+.conteudo .conteudo_titulo_pagina {
+    background: #ddd;
+    height: 80px;
+    width: 100%;
+    background: -webkit-gradient(linear,left top,left bottom,from(#ddd),to(#f7f7f7));
+    background: -moz-linear-gradient(top,#c0c0c0,#f0f0f0);
+    background: -o-linear-gradient(top,#c0c0c0,#f0f0f0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0c0c0',endColorstr='#f0f0f0');
+    border-bottom: 1px solid #f0f0f0;
+}
+.navbar-default .navbar-nav>li>a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: normal;
+    padding-top: 20px;
+}
+.texto_rodape {
+    font-size: 15px;
+    text-decoration: none;
+    color: #999;
 }
