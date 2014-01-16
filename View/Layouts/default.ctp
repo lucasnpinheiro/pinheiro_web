@@ -21,21 +21,44 @@
 
     <body>
 
-        <div class="topo"></div>
+        <div class="topo">
+
+            <div class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".top-collapse"><!-- NOTE!  data-toggle was changed to top-collapse -->
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><?php echo $this->Html->image('/img/logo.png'); ?></a>
+                    </div>
+                    <div class="navbar-collapse collapse top-collapse"><!-- NOTE!  the class top-collapse was added here -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><?php echo $this->Html->link('Home', '/'); ?></li>
+                            <li><?php echo $this->Html->link('Empresa', '/empresa'); ?></li>
+                            <li><?php echo $this->Html->link('Serviços', '/servicos'); ?></li>
+                            <li><?php echo $this->Html->link('Contato', '/contato'); ?></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+
+        </div>
         <div class="banner"></div>
         <div class="conteudo"></div>
         <div class="rodape">
             <div class="rodape_nivel_1">
                 <div class="col-xs-6">
-                    <input type="text" /><img src="/cakePainel/img/pinheiro/seta_news.png" />
+                    <input type="text" placeholder="Newsletter" style="border: none; height: 36px; margin: 0; padding: 3px;" />
+                    <?php echo $this->Html->image('/img/seta_news.png', array('style' => 'margin: 0; padding: 0; margin-left: -4px; margin-top: -2px;')); ?>
                 </div>
                 <div class="col-xs-6" style="text-align: right;">
                     <span style="background: #1F1F1F; margin: 0; padding: 0; display: inline-block; height: 47px;">
-                        <a class="social social_facebbok" href=""></a>
-                        <a class="social social_twitter" href=""></a>
-                        <a class="social social_google_plus" href=""></a>
-                        <a class="social social_linkedin" href=""></a>
-                        <a class="social social_flick" href=""></a>
+                        <?php echo $this->Html->link('', Configure::read('Social.LinkFacebook'), array('class' => 'social social_facebbok', 'escape' => false, 'target' => '_blank', 'title' => 'Facebook')); ?>
+                        <?php echo $this->Html->link('', Configure::read('Social.LinkTwitter'), array('class' => 'social social_twitter', 'escape' => false, 'target' => '_blank', 'title' => 'Twitter')); ?>
+                        <?php echo $this->Html->link('', Configure::read('Social.LinkGooglePlus'), array('class' => 'social social_google_plus', 'escape' => false, 'target' => '_blank', 'title' => 'Google Plus')); ?>
+                        <?php echo $this->Html->link('', Configure::read('Social.LinkLinkedin'), array('class' => 'social social_linkedin', 'escape' => false, 'target' => '_blank', 'title' => 'Linkedin')); ?>
                     </span>
                 </div>
             </div>

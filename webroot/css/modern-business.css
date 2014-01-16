@@ -2,8 +2,6 @@ html, body {
     height:100%;
 }
 body{
-    background-image: url('../img/pinheiro/fundo_topo.png');
-    background-repeat: repeat-x;
     background-color: #ccc;
 }
 .navbar{
@@ -12,6 +10,17 @@ body{
 }
 .topo{
     height: 126px;
+    background-image: url('../img/fundo_topo.png');
+    background-repeat: repeat-x;
+}
+.logo{
+    height: 30px;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    width: 201px;
+    top: 40px;
+    position: absolute;
+    left: 150px;
 }
 .banner{
     height: 500px;
@@ -47,7 +56,7 @@ body{
     background-color: #2E2E2E;
 }
 .social{
-    background-image: url('../img/pinheiro/sedes_sociais.png');
+    background-image: url('../img/sedes_sociais.png');
     height: 43px;
     width: 43px;
     background-repeat: no-repeat;
@@ -56,7 +65,7 @@ body{
     padding: 0px;
 }
 .social:hover{
-    background-image: url('../img/pinheiro/sedes_sociaishover.png');
+    background-image: url('../img/sedes_sociaishover.png');
     height: 43px;
     width: 43px;
     background-repeat: no-repeat;
@@ -78,4 +87,29 @@ body{
 }
 .social_flick{
     background-position: -180px 0px;
+}
+
+.navbar.navbar-default{
+    padding-top:32px;
+}
+.navbar {
+    background-image: none;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    filter: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>li>a {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar .navbar-nav>.active>a {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: #CA501F;
+    background-color: transparent;
 }
