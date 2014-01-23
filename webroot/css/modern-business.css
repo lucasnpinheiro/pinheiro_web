@@ -30,7 +30,7 @@ body{
 }
 .topo{
     border-top: 3px rgb(255, 133, 0) solid;
-    height: 624px;
+    /*height: 624px;*/
     background-image: url('../img/fundo_topo.png');
     background-repeat: repeat-x;
     background-color: #ddd;
@@ -45,7 +45,7 @@ body{
     left: 150px;
 }
 .conteudo{
-    min-height: 500px;
+    min-height: 250px;
 }
 .rodape{
     background-color: #242424;
@@ -57,10 +57,10 @@ body{
 .rodape .rodape_nivel_1{
     padding: 15px;
     margin: 15px;
-    height: 75px;
+    height: 90px;
 }
 .rodape .rodape_nivel_1 div{
-    background-color: #242424;
+    background: none;
 }
 .rodape .rodape_nivel_2{
     font-size: 0.7em;
@@ -171,6 +171,18 @@ body{
 .rodape_social {
     text-align: center;
 }
+.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    z-index: 15;
+    width: 100%;
+    padding: initial;
+    margin: auto;
+    text-align: right;
+    list-style: none;
+    right: 15px;
+}
 @media (min-width: 768px){ 
     .navbar-collapse .navbar-nav.navbar-right:last-child {
         margin-right: -15px;
@@ -181,16 +193,10 @@ body{
     }
 }
 .planos {
-    width: 260px;
-    font-size: 12px;
-    float: left;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 30px;
-    margin-top: -20px;
+    font-size: 1em;
 }
 .planos h2 a {
-    font-size: 25px;
+    font-size: 1em;
     text-decoration: none;
     color: #555;
 }
@@ -204,7 +210,6 @@ body{
 .texto-titulo{
     color: #797979;
     font-size: 2.5em;
-    margin-top: -5px;
 }
 .texto-sub-titulo{
     color: #797979;
@@ -222,6 +227,8 @@ body{
     overflow: auto;
     display: block;
     margin-bottom: 15px;
+    padding-bottom: 20px;
+    margin-top: 10px;
 }
 .conteudo .conteudo_titulo_pagina {
     background: #ddd;
@@ -240,7 +247,7 @@ body{
     padding-top: 20px;
 }
 .texto_rodape {
-    font-size: 15px;
+    font-size: 12px;
     text-decoration: none;
     color: #999;
 }

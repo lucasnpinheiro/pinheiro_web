@@ -5,7 +5,7 @@
         foreach ($conteudos as $key => $value) {
             echo '<div class="col-xs-12 texto-borda">';
             //echo '<h1 class="texto-titulo fonte">' . $value['ConteudosArtigo']['titulo'] . '</h1>';
-            echo '<p class="lead texto-conteudo">' . $value['ConteudosArtigo']['conteudo'] . '</p>';
+            echo $value['ConteudosArtigo']['conteudo'];
             echo '<div class="clearfix"></div>';
             echo '<div class="row">';
             if (count($value['ConteudosMidia']) > 0) {
