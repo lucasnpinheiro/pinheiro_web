@@ -4,7 +4,9 @@
         echo '<div class="row">';
         foreach ($conteudos as $key => $value) {
             echo '<div class="col-xs-12 texto-borda">';
-            echo $value['ConteudosArtigo']['conteudo'];
+            echo '<h1 class="texto-titulo">' . $value['ConteudosArtigo']['titulo'] . '</h1>';
+            echo '<p class="lead texto-conteudo">' . $value['ConteudosArtigo']['conteudo'] . '</p>';
+            //echo $this->ConteudosHtml->link($value['Conteudo']['id'], 'Veja mais...', array('class' => 'btn btn-link conteudo_link', 'pagina' => $pagina['ConteudosPagina']['id']));
             echo '<div class="clearfix"></div>';
             echo '<div class="row">';
             if (count($value['ConteudosMidia']) > 0) {

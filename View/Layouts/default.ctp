@@ -35,10 +35,10 @@
                         </div>
                         <div class="navbar-collapse collapse top-collapse"><!-- NOTE!  the class top-collapse was added here -->
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="active fonte"><?php echo $this->Html->link('HOME', '/'); ?></li>
-                                <li class="fonte"><?php echo $this->Html->link('EMPRESA', '/empresa'); ?></li>
-                                <li class="fonte"><?php echo $this->Html->link('SERVIÇOS', '/servicos'); ?></li>
-                                <li class="fonte"><?php echo $this->Html->link('CONTATO', '/contato'); ?></li>
+                                <li class="<?php echo ($this->Html->url() == '/site/' ? 'active ' : ''); ?>fonte"><?php echo $this->Html->link('HOME', '/'); ?></li>
+                                <li class="<?php echo ($this->Html->url() == '/site/empresa' ? 'active ' : ''); ?>fonte"><?php echo $this->Html->link('EMPRESA', '/empresa'); ?></li>
+                                <li class="<?php echo ($this->Html->url() == '/site/servicos' ? 'active ' : ''); ?>fonte"><?php echo $this->Html->link('SERVIÇOS', '/servicos'); ?></li>
+                                <li class="<?php echo ($this->Html->url() == '/site/contato' ? 'active ' : ''); ?>fonte"><?php echo $this->Html->link('CONTATO', '/contato'); ?></li>
                             </ul>
                         </div><!--/.nav-collapse -->
                     </div>

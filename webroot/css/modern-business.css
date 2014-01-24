@@ -23,6 +23,8 @@ html, body {
 }
 body{
     background-color: #ddd;
+    font-family: arial;
+    font-size: 12px;
 }
 .navbar{
     background: transparent;
@@ -192,13 +194,11 @@ body{
         text-align: right;
     }
 }
-.planos {
-    font-size: 1em;
-}
-.planos h2 a {
-    font-size: 1em;
+h1, h1 a, h2, h2 a, h3, h3 a {
+    font-size: 30px;
     text-decoration: none;
     color: #555;
+    font-family: fonte;
 }
 .link_planos {
     color: #CA501F;
@@ -208,17 +208,19 @@ body{
     -webkit-border-radius: 4px;
 }
 .texto-titulo{
-    color: #797979;
-    font-size: 2.5em;
+    font-size: 30px;
+    text-decoration: none;
+    color: #555;
+    font-family: fonte;
 }
 .texto-sub-titulo{
     color: #797979;
     margin-left: 15px;
     margin-bottom: 20px;
     font-size: 0.9em;
+    font-family: fonte;
 }
 .texto-conteudo{
-    color: #898989;
     font-size: 1em;
 }
 .texto-borda{
