@@ -21,6 +21,6 @@ if (count($conteudos) > 0) {
 }
 
 foreach ($metas as $key => $value) {
-    $this->Html->meta($key, $value, array('block' => 'meta_tag'));
+    $this->Html->meta(array('property' => $key, 'content' => $value), NULL, array('block' => 'meta_tag'));
 }
 ?>
