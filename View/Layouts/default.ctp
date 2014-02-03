@@ -31,7 +31,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#"><?php echo $this->Html->image('/img/logo.png'); ?></a>
+                            <?php echo $this->Html->image('/img/logo.png', array('class' => 'navbar-brand', 'url' => '/', 'alt' => Configure::read('Config.Titulo'), 'title' => Configure::read('Config.Titulo'))); ?>
                         </div>
                         <div class="navbar-collapse collapse top-collapse"><!-- NOTE!  the class top-collapse was added here -->
                             <ul class="nav navbar-nav navbar-right">

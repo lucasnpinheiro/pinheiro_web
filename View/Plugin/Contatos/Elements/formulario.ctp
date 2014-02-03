@@ -20,14 +20,14 @@
         echo '<div class="col-xs-12 col-md-6">';
         echo $this->Form->input('tipo', array('label' => false, 'placeholder' => '* Assunto', 'style' => 'font-family: arial; font-size: 12px;', 'required' => true));
         echo '</div>';
-        echo '<div class="col-xs-12 col-md-12">';
+        echo '<div class="col-xs-12 col-md-6">';
         echo $this->Form->input('mensagem', array('label' => false, 'placeholder' => '* Descricao', 'style' => 'font-family: arial; font-size: 12px;', 'required' => true, 'rows' => 10));
         echo '</div>';
         echo '<div class="col-xs-12 col-md-6">';
         $this->Captcha->render($captchaSettings);
         echo '</div>';
         echo '<div class="col-xs-12 col-md-6">';
-        echo $this->Form->end(array('name' => 'Enviar', 'label' => 'Enviar', 'div' => array('class' => 'form-group text-right')));
+        echo $this->Form->end(array('name' => 'Enviar', 'label' => 'Enviar', 'class' => 'btn btn-info btn-sm', 'div' => array('class' => 'form-group text-right')));
         echo '</div>';
         ?>
     </div>
